@@ -14,6 +14,9 @@
 		911845761C3E24F400377A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911845741C3E24F400377A19 /* LaunchScreen.storyboard */; };
 		911845811C3E24F400377A19 /* Filterer_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911845801C3E24F400377A19 /* Filterer_AppTests.swift */; };
 		9118458C1C3E24F400377A19 /* Filterer_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118458B1C3E24F400377A19 /* Filterer_AppUITests.swift */; };
+		9118459A1C3E257600377A19 /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911845991C3E257600377A19 /* RGBAImage.swift */; };
+		91392B6E1C5D9DBB005FF43B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91392B6D1C5D9DBB005FF43B /* QuartzCore.framework */; };
+		91ABBD871C659DF40030EA16 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ABBD861C659DF40030EA16 /* PhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		911845871C3E24F400377A19 /* Filterer AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Filterer AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9118458B1C3E24F400377A19 /* Filterer_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filterer_AppUITests.swift; sourceTree = "<group>"; };
 		9118458D1C3E24F400377A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911845991C3E257600377A19 /* RGBAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAImage.swift; sourceTree = "<group>"; };
+		91392B6D1C5D9DBB005FF43B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		91ABBD861C659DF40030EA16 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91392B6E1C5D9DBB005FF43B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		9118455F1C3E24F300377A19 = {
 			isa = PBXGroup;
 			children = (
+				91392B6D1C5D9DBB005FF43B /* QuartzCore.framework */,
 				9118456A1C3E24F400377A19 /* Filterer App */,
 				9118457F1C3E24F400377A19 /* Filterer AppTests */,
 				9118458A1C3E24F400377A19 /* Filterer AppUITests */,
@@ -99,6 +107,8 @@
 			children = (
 				9118456B1C3E24F400377A19 /* AppDelegate.swift */,
 				9118456D1C3E24F400377A19 /* ViewController.swift */,
+				911845991C3E257600377A19 /* RGBAImage.swift */,
+				91ABBD861C659DF40030EA16 /* PhotoView.swift */,
 				9118456F1C3E24F400377A19 /* Main.storyboard */,
 				911845721C3E24F400377A19 /* Assets.xcassets */,
 				911845741C3E24F400377A19 /* LaunchScreen.storyboard */,
@@ -260,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9118456E1C3E24F400377A19 /* ViewController.swift in Sources */,
+				9118459A1C3E257600377A19 /* RGBAImage.swift in Sources */,
 				9118456C1C3E24F400377A19 /* AppDelegate.swift in Sources */,
+				91ABBD871C659DF40030EA16 /* PhotoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +499,7 @@
 				911845921C3E24F400377A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		911845931C3E24F400377A19 /* Build configuration list for PBXNativeTarget "Filterer AppTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				911845951C3E24F400377A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		911845961C3E24F400377A19 /* Build configuration list for PBXNativeTarget "Filterer AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				911845981C3E24F400377A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
